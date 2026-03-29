@@ -32,15 +32,7 @@
 
 ## Overview
 
-https://duncan-122512.github.io/Flip-The-Coin/
-
-<!--
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
-- What have you learned/improved?
-
-- Your wisdom? :)
--->
+![screenshot](flip-the-coin_preview.png)
 
 How it works:
 
