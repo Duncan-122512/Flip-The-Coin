@@ -32,7 +32,7 @@
 
 ## Overview
 
-![screenshot](https://duncan-122512.github.io/Flip-The-Coin/)
+https://duncan-122512.github.io/Flip-The-Coin/
 
 <!--
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
