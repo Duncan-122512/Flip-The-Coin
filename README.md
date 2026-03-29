@@ -10,7 +10,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://your-url-to-the-solution">
+    <a href="https://github.com/Duncan-122512/Flip-The-Coin/tree/main>
       Solution
     </a>
     <span> | </span>
