@@ -6,11 +6,11 @@
 
 <div align="center">
   <h3>
-    <a href="{https://your-demo-link.your-domain}">
+    <a href="https://duncan-122512.github.io/Flip-The-Coin/">
       Demo
     </a>
     <span> | </span>
-    <a href="{https://your-url-to-the-solution}">
+    <a href="https://your-url-to-the-solution">
       Solution
     </a>
     <span> | </span>
