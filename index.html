@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flip the coin | devChallenges.io</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link
+      rel="icon"
+      href="Resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+  </head>
+  <body>
+    <!-- Heading -->
+    <header id="headTitle">
+      <h1 id="flipTitle">Flip the coin</h1>
+    </header>
+    <main class="mainContent">
+      <!-- flip coin  -->
+      <section id="flipCoinContainer">
+        <h2 id="flipInstruction" class="headingContent">
+          Press the coin or the button to flip the coin
+        </h2>
+        <!-- coin face & shadow container -->
+        <div id="coinCointainer" aria-label="3D Coin">
+          <div role="button" class="flip_Coin" id="coin" tabindex="0">
+            <!-- Heads coin face -->
+            <img
+              class="coinFace"
+              id="faceHeads"
+              src="Resources/heads.svg"
+              width="132"
+              height="132"
+              alt="face of a coin on heads"
+            />
+            <!-- Tails coin face -->
+            <img
+              class="coinFace"
+              id="faceTails"
+              src="Resources/tails.svg"
+              width="132"
+              height="132"
+              alt="face of a coin on tails"
+            />
+          </div>
+        </div>
+        <img
+          id="coinFaceShadow"
+          src="Resources/shadow.svg"
+          width="100"
+          height="100"
+          alt="shadow of a coin"
+        />
+        <h2 id="flip_Result" class="headingContent">Heads</h2>
+        <!-- <progress max="100" id="test"></progress> -->
+        <!-- flip button -->
+        <button id="flipButton" type="button">Random</button>
+      </section>
+    </main>
+    <!-- Author Information -->
+    <footer class="author-info">
+      <h3 id="author">
+        Coded by <span role="text">Duncan</span> | Challenge by
+        <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+          >devChallenges.io</a
+        >.
+      </h3>
+    </footer>
+  </body>
+</html>

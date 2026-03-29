@@ -1,0 +1,212 @@
+ html {
+     box-sizing: border-box;
+     font-family: 'Exo-Regular';
+     font-style: normal;
+ }
+
+ *,
+ *:before,
+ *:after {
+     box-sizing: inherit;
+ }
+
+ * {
+     margin: 0px;
+     padding: 0px;
+ }
+
+ /* fonts */
+ @font-face {
+     font-family: 'Exo-Bold';
+     src: url(Fonts/Exo/static/Exo-Bold.ttf);
+ }
+
+ @font-face {
+     font-family: 'Exo-Regular';
+     src: url(Fonts/Exo/static/Exo-Regular.ttf);
+ }
+
+ :root {
+     /* colors palettes */
+     --primary-color: hsl(0, 0%, 100%);
+     --secondary-color: #B56576;
+     --bg1-color: #4f5675;
+     --button-bg-color: hsl(214, 59%, 49%);
+     --coin-scale: 1.15;
+
+ }
+
+ /* title */
+ h1 {
+     letter-spacing: .2rem;
+     font-family: 'Exo-Bold';
+     font-style: normal;
+     font-size: clamp(2rem, 0.308vw + 1.928rem, 2.188rem);
+     line-height: clamp(0.164rem, -0.032vw + 0.191rem, 0.184rem);
+     text-shadow: -6px 2px 0px #35383f;
+ }
+
+ body {
+     display: flex;
+     flex-direction: column;
+     justify-content: start;
+     align-items: center;
+     height: 100vh;
+     background-color: var(--bg1-color);
+     color: var(--primary-color);
+     gap: 1rem;
+ }
+
+ header#headTitle {
+     margin-top: 2rem;
+ }
+
+ h2[id=flip_Result] {
+     opacity: 1;
+     transition: opacity ease-in 2s
+ }
+
+ h2.headingContent {
+     font-size: clamp(1rem, 0.277vw + 0.935rem, 1.169rem);
+     line-height: clamp(0.01rem, 0.02vw + 0.005rem, 0.021rem);
+     margin: 2rem 0rem;
+     letter-spacing: .1rem;
+ }
+
+ main {
+     margin: 1rem 0rem;
+ }
+
+ section#flipCoinContainer {
+     display: flex;
+     flex-direction: column;
+     justify-content: start;
+     align-items: center;
+ }
+
+ #coinCointainer {
+     perspective: 500px;
+ }
+
+ div[id=coin] {
+     width: clamp(6rem, 5.538vw + 4.702rem, 9.375rem);
+     height: 8.25rem;
+     position: relative;
+     margin-top: 3rem;
+     border-radius: 1rem;
+     transform-style: preserve-3d;
+     transition: outline-color border-style 300ms ease-in-out;
+ }
+
+ div[id=coin]:hover {
+     border-style: solid;
+ }
+
+ div[id=coin]:focus {
+     cursor: pointer;
+     outline-color: white;
+ }
+
+ div[id=coin]:active {
+     border-style: none;
+ }
+
+ #faceHeads {
+     transform: rotateX(360deg);
+ }
+
+ #faceTails {
+     transform: rotateX(180deg)
+ }
+
+ img[class=coinFace] {
+     position: absolute;
+     backface-visibility: hidden;
+     width: 100%;
+     height: 100%;
+     transform-style: preserve-3d;
+     perspective: 1000;
+     cursor: pointer;
+     transition-property: border-style;
+ }
+
+ img[id=coinFaceShadow] {
+     margin: 1.5rem 0rem;
+     width: clamp(4rem, 3.5rem + 1.50vw, 4.5rem);
+     height: fit-content;
+ }
+
+ .flipCoin {
+     animation: flipCoin 2s alternate;
+
+ }
+
+ .scaleShadow {
+     animation: scaleShadow 2s alternate;
+ }
+
+ @keyframes flipCoin {
+     0% {
+         top: 0rem;
+         transform: rotateX(0) scale(var(--coin-scale));
+     }
+
+     100% {
+         top: -3rem;
+         transform: rotateX(1800deg) scale(var(--coin-scale));
+     }
+ }
+
+ @keyframes scaleShadow {
+     0% {
+         transform: scale(var(--coin-scale));
+     }
+
+     100% {
+         transform: scale(.90);
+     }
+ }
+
+ button {
+     margin: 1rem 0rem;
+     text-transform: uppercase;
+     background-color: var(--button-bg-color);
+     color: var(--primary-color);
+     padding: 1rem 0rem;
+     border-radius: .75rem;
+     border: white;
+     width: clamp(6rem, 5.538vw + 4.702rem, 9.375rem);
+     font-size: clamp(0.875rem, 0.41vw + 0.779rem, 1.125rem);
+     font-weight: bold;
+     box-shadow: 0px 4px 0px 0px hsl(207, 63%, 37%);
+     transition: background-color box-shadow border ease-in-out 300ms;
+     letter-spacing: .060rem;
+ }
+
+ button:hover,
+ button:focus {
+     cursor: pointer;
+     background-color: #4983d0;
+     border: 2px solid white;
+     outline: none;
+     box-shadow: 0px 4px 0px 0px #4983d0;
+ }
+
+ span {
+     color: #B56576;
+ }
+
+ footer.author-info {
+     /* text-align: center; */
+     margin-top: 1rem;
+ }
+
+ .author-info a {
+     text-decoration: none;
+     color: #B56576;
+ }
+
+ h4#author {
+     font-size: clamp(0.875rem, 0.205vw + 0.827rem, 1rem);
+     line-height: clamp(0.01rem, 0.02vw + 0.005rem, 0.021rem);
+ }
