@@ -1,6 +1,6 @@
  html {
      box-sizing: border-box;
-     font-family: 'Exo-Regular';
+     font-family: 'Kanit-Regular';
      font-style: normal;
  }
 
@@ -15,38 +15,39 @@
      padding: 0px;
  }
 
- /* fonts */
  @font-face {
-     font-family: 'Exo-Bold';
-     src: url(Fonts/Exo/static/Exo-Bold.ttf);
+     font-family: 'Kanit-Semibold';
+     src: url(Fonts/Kanit/Kanit-SemiBold.ttf);
  }
 
  @font-face {
-     font-family: 'Exo-Regular';
-     src: url(Fonts/Exo/static/Exo-Regular.ttf);
+     font-family: 'Kanit-Regular';
+     src: url(Fonts/Kanit/Kanit-Regular.ttf);
  }
 
  :root {
      /* colors palettes */
      --primary-color: #ECEDF0;
-     --secondary-color: #B56576;
-     --bg1-color: #4f5675;
+     --secondary-color: #e690a3;
+     --bg1-color: #404A65;
      --button-bg-color: #1F6FB0;
      --coin-scale: 1.15;
 
  }
 
- /* title */
  h1 {
+     text-align: center;
      letter-spacing: .2rem;
-     font-family: 'Exo-Bold';
+     font-family: 'Kanit-Semibold';
      font-style: normal;
-     font-size: clamp(2rem, 0.308vw + 1.928rem, 2.188rem);
-     line-height: clamp(0.164rem, -0.032vw + 0.191rem, 0.184rem);
-     text-shadow: -6px 2px 0px #35383f;
+     font-weight: 600;
+     font-size: clamp(3.125rem, 1.436vw + 2.788rem, 4rem);
+     line-height: clamp(1.875rem, 0.123vw + 1.846rem, 1.95rem);
+     text-shadow: -5px -3px 0px #35383f;
  }
 
  body {
+     margin: min(2rem, 10%) min(1rem, 8%);
      display: flex;
      flex-direction: column;
      justify-content: start;
@@ -67,10 +68,11 @@
  }
 
  h2.headingContent {
-     font-size: clamp(1rem, 0.277vw + 0.935rem, 1.169rem);
-     line-height: clamp(0.01rem, 0.02vw + 0.005rem, 0.021rem);
-     margin: 2rem 0rem;
-     letter-spacing: .1rem;
+     letter-spacing: .10rem;
+     text-align: center;
+     font-family: 'Kanit-Regular';
+     font-size: clamp(1.25rem, 0.41vw + 1.154rem, 1.5rem);
+     line-height: clamp(1.875rem, 0.123vw + 1.846rem, 1.95rem);
  }
 
  main {
@@ -80,11 +82,16 @@
  section#flipCoinContainer {
      display: flex;
      flex-direction: column;
-     justify-content: start;
+     justify-content: flex-start;
      align-items: center;
  }
 
  #coinCointainer {
+     margin-block: min(.5rem, 10%);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 10rem;
      perspective: 500px;
  }
 
@@ -102,14 +109,10 @@
      border-style: solid;
  }
 
- div[id=coin]:focus {
+ /* div[id=coin]:focus {
      cursor: pointer;
      outline-color: white;
- }
-
- div[id=coin]:active {
-     border-style: none;
- }
+ } */
 
  #faceHeads {
      transform: rotateX(360deg);
@@ -138,7 +141,6 @@
 
  .flipCoin {
      animation: flipCoin 2s alternate;
-
  }
 
  .scaleShadow {
@@ -168,16 +170,16 @@
  }
 
  button {
-     margin: 1rem 0rem;
+     margin-top: 1rem;
      text-transform: uppercase;
      background-color: var(--button-bg-color);
      color: var(--primary-color);
      padding: 1rem 0rem;
      border-radius: .75rem;
      border: white;
-     width: clamp(6rem, 5.538vw + 4.702rem, 9.375rem);
-     font-size: clamp(0.875rem, 0.41vw + 0.779rem, 1.125rem);
-     font-weight: bold;
+     width: clamp(8rem, 3.282vw + 7.231rem, 10rem);
+     font-size: clamp(1.125rem, 0.205vw + 1.077rem, 1.25rem);
+     font-weight: 600;
      box-shadow: 0px 4px 0px 0px hsl(207, 63%, 37%);
      transition: background-color box-shadow border ease-in-out 300ms;
      letter-spacing: .060rem;
@@ -193,20 +195,20 @@
  }
 
  span {
-     color: #B56576;
+     color: var(--secondary-color);
  }
 
  footer.author-info {
-     /* text-align: center; */
      margin-top: 1rem;
  }
 
  .author-info a {
      text-decoration: none;
-     color: #B56576;
+     color: var(--secondary-color);
  }
 
- h4#author {
-     font-size: clamp(0.875rem, 0.205vw + 0.827rem, 1rem);
-     line-height: clamp(0.01rem, 0.02vw + 0.005rem, 0.021rem);
+ h3#author {
+     text-align: center;
+     font-size: clamp(1rem, 0.277vw + 0.935rem, 1.169rem);
+     line-height: clamp(1.875rem, 0.123vw + 1.846rem, 1.95rem);
  }

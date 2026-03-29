@@ -20,9 +20,7 @@ function resultsOfTails($resultsOfHeads) {
 
 $coin.addEventListener("keydown", (event) => {
   if (event.key === "Enter" || event.key === " ") {
-    // cancel the default behavior
     event.preventDefault();
-    // start  the click event
     $coin.classList.add("flipCoin");
     $coinFaceShadow.classList.add("scaleShadow");
     tossCoin();
@@ -78,11 +76,9 @@ function tossCoin() {
   if (getRandomNumber === 0) {
     resultsOfHeads();
     $flipResult.textContent = $resultsOfHeads;
-    console.log($resultsOfHeads, getRandomNumber);
   } else {
     resultsOfTails();
     $flipResult.textContent = $resultsOfTails;
-    console.log($resultsOfTails, getRandomNumber);
   }
   disableButton();
   const setButtonTimeout = setTimeout(enableButton, 2000);
