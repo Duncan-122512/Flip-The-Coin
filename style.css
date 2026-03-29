@@ -28,10 +28,10 @@
 
  :root {
      /* colors palettes */
-     --primary-color: hsl(0, 0%, 100%);
+     --primary-color: #ECEDF0;
      --secondary-color: #B56576;
      --bg1-color: #4f5675;
-     --button-bg-color: #404A65;
+     --button-bg-color: #1F6FB0;
      --coin-scale: 1.15;
 
  }
