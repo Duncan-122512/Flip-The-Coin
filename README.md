@@ -54,7 +54,6 @@ Interaction behavior:
 
 - HTML5
 - CSS3
-- Flexbox
 - Vanilla JavaScript
 
 ## Author
