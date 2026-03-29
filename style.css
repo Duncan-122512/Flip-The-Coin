@@ -102,17 +102,24 @@
      margin-top: 3rem;
      border-radius: 1rem;
      transform-style: preserve-3d;
-     transition: outline-color border-style 300ms ease-in-out;
+     transition: transform 300ms ease-in-out;
  }
 
- div[id=coin]:hover {
-     border-style: solid;
- }
-
- /* div[id=coin]:focus {
+ div[id=coin]:hover,
+ div[id=coin]:focus {
      cursor: pointer;
-     outline-color: white;
- } */
+     border: none;
+     outline: none;
+     transform: scale(1.2);
+ }
+
+ .flip_coin:hover,
+ .flip_coin:focus {
+     cursor: pointer;
+     border: none;
+     outline: none;
+     transform: scale(1.2);
+ }
 
  #faceHeads {
      transform: rotateX(360deg);
@@ -192,10 +199,6 @@
      border: 2px solid white;
      outline: none;
      box-shadow: 0px 4px 0px 0px #4983d0;
- }
-
- span {
-     color: var(--secondary-color);
  }
 
  footer.author-info {
