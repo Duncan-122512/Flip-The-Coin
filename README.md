@@ -35,7 +35,7 @@
 ![screenshot](flip-the-coin_preview.png)
 
 How it works:
-
+- Press or click the coin or the Flip Coin button, or use the Tab key to navigate to them on the page. When the coin is selected, it will scale up, and the Flip Coin button will be highlighted to show it’s ready. Press     Enter or the Spacebar to start the coin flip
 - The coin flips upward, rotating between heads and tails
 - Its shadow shrinks as it rises and expands again as it falls back down
 - The final result (heads or tails) fades in once the animation ends
