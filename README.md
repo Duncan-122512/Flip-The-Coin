@@ -42,7 +42,7 @@ How it works:
 
 Interaction behavior:
 
-- During the animation, the coin and “RANDOM” button are temporarily disabled and partially faded to - prevent interruption
+- During the animation, the coin and “FLIP COIN” button are temporarily disabled and partially faded to - prevent interruption
 - Once the flip is complete, both controls are re-enabled and ready for the next toss
 
 ### What I learned
